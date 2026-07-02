@@ -1,0 +1,7 @@
+{
+	"keyword": "facebook login",
+	"primary_intent": "Navigational",
+	"secondary_intent": null,
+	"confidence": "High",
+	"matched_rules": "Navigational"
+}

@@ -1,0 +1,7 @@
+{
+	"keyword": "buy running shoes online",
+	"primary_intent": "Transactional",
+	"secondary_intent": null,
+	"confidence": "High",
+	"matched_rules": "Transactional"
+}

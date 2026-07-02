@@ -1,0 +1,20 @@
+{
+    "title": "Keyword Intent Classifier Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keywords": {
+            "title": "Keywords",
+            "type": "array",
+            "description": "List of keywords to classify.",
+            "editor": "stringList",
+            "prefill": [
+                "buy running shoes online",
+                "how to tie a tie",
+                "starbucks near me",
+                "facebook login"
+            ]
+        }
+    },
+    "required": ["keywords"]
+}

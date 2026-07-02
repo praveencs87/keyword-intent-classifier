@@ -1,0 +1,7 @@
+{
+	"keyword": "starbucks near me",
+	"primary_intent": "Local",
+	"secondary_intent": null,
+	"confidence": "High",
+	"matched_rules": "Local"
+}
