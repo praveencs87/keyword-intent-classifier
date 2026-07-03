@@ -1,42 +1,45 @@
 {
-    "actorSpecification": 1,
-    "name": "keyword-intent-classifier",
-    "title": "Keyword Intent Classifier",
-    "description": "Instantly classify thousands of keywords into Transactional, Informational, Navigational, or Local search intents.",
-    "version": "1.0",
-    "input": "./input_schema.json",
-    "dockerfile": "./Dockerfile",
-    "minMemoryMbytes": 1024,
-    "maxMemoryMbytes": 4096,
-    "pricingModel": "PAY_PER_EVENT",
-    "pricingEvents": [
-        {
-            "eventName": "apify-actor-start",
-            "pricePerEvent": 0.05,
-            "description": "Base fee for starting the process"
-        },
-        {
-            "eventName": "keyword-classified",
-            "pricePerEvent": 0.0005,
-            "description": "Charged per keyword successfully classified ($0.50 per 1k)"
-        },
-        {
-            "eventName": "lead-extracted",
-            "pricePerEvent": 0.005,
-            "description": "Charged per lead extracted"
-        }
-    ],
-    "isPublic": true,
-    "seoTitle": "Keyword Intent Classifier | SEO AI Tool",
-    "seoDescription": "Instantly classify thousands of keywords into Transactional, Informational, Navigational, or Local search intents. Blazing fast heuristic engine.",
-    "categories": [
-        "SEO",
-        "MARKETING",
-        "AI"
-    ],
-    "defaultRunOptions": {
-        "build": "latest",
-        "timeoutSecs": 1800,
-        "memoryMbytes": 4096
+  "actorSpecification": 1,
+  "name": "keyword-intent-classifier",
+  "title": "Keyword Intent Classifier",
+  "description": "Instantly classify thousands of keywords into Transactional, Informational, Navigational, or Local search intents.",
+  "version": "1.0",
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile",
+  "minMemoryMbytes": 1024,
+  "maxMemoryMbytes": 4096,
+  "pricingModel": "PAY_PER_EVENT",
+  "pricingEvents": [
+    {
+      "eventName": "apify-actor-start",
+      "pricePerEvent": 0.05,
+      "description": "Base fee for starting the process"
+    },
+    {
+      "eventName": "keyword-classified",
+      "pricePerEvent": 0.0005,
+      "description": "Charged per keyword successfully classified ($0.50 per 1k)"
+    },
+    {
+      "eventName": "lead-extracted",
+      "pricePerEvent": 0.005,
+      "description": "Charged per lead extracted"
     }
+  ],
+  "isPublic": true,
+  "seoTitle": "Keyword Intent Classifier | SEO AI Tool",
+  "seoDescription": "Instantly classify thousands of keywords into Transactional, Informational, Navigational, or Local search intents. Blazing fast heuristic engine.",
+  "categories": [
+    "SEO",
+    "MARKETING",
+    "AI"
+  ],
+  "defaultRunOptions": {
+    "build": "latest",
+    "timeoutSecs": 1800,
+    "memoryMbytes": 4096
+  },
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
 }
